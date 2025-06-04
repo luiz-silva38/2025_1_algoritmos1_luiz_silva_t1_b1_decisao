@@ -16,17 +16,17 @@ main()
   xz = x + z;
   yz = y + z;
 
-  if(((((x > abs(y - z)) && (x < yz)) && ((y > abs(x - z)) && (y < xz))) && ((z > abs(x - y))) && (z < xy))) // 15 parenteses
+  if((((x > abs(y - z)) && (x < yz)) && ((y > abs(x - z)) && (y < xz))) && (((z > abs(x - y)) && (z < xy)))) // 15 parenteses
     {
     if((x == y) && (y == z)) // 3 parenteses
       {
       printf("\nE um triangulo equilatero\n");
       }
-    if(((((x == y) && (x != z)) || ((x == z) && (x != y))) || ((y == z) && (y != x)))) // 12 parenteses 
+    if((((x == y) && (x != z)) || ((x == z) && (x != y))) || (((y == z) && (y != x)))) // 12 parenteses 
       {
       printf("\nE um triangulo isoceles\n");
       }
-    if((((x != y) && (y != z)) && (x != z))) // 6 parenteses 
+    if(((x != y) && (y != z)) && ((x != z))) // 6 parenteses 
       {
       printf("\nE um triangulo escaleno\n");
       }
